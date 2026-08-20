@@ -1,0 +1,11 @@
+.row { grid-template-columns:1.15fr 1fr .55fr .65fr auto; }
+.row-actions { margin-left:auto; display:flex; gap:5px; align-items:center; }
+.icon-button { display:grid; place-items:center; width:29px; height:29px; border:1px solid #dce6e1; border-radius:6px; color:#62757a; background:#fff; }
+.icon-button:hover { border-color:#8ba0ec; color:#5774df; background:#f2f4ff; }
+.icon-button.remove:hover { border-color:#efb3a3; color:#cd6148; background:#fff1ed; }
+.person > div:not(.row-actions) { min-width:0; }
+@media(max-width:760px) {
+  .row { grid-template-columns:1fr .55fr auto; }
+  .row span:nth-child(2), .row-head span:nth-child(2), .row span:nth-child(4), .row-head span:nth-child(4) { display:none; }
+}
+
